@@ -1,0 +1,243 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+/**Contenedor principal */
+.container {
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    /* grid-template-rows: repeat(3, 1fr); */
+}
+
+/**Barra de navegacion */
+
+.barra-navegacion {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: #0ea5e9;
+    color: white;
+    display: grid;
+    grid-template-rows: 15% 50% 25%;
+    font-size: 24px;
+}
+
+.opciones {
+    display: inline-block;
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.opciones:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.opciones:visited {
+    color: white;
+}
+
+/**Header */
+
+header {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin: 15px 0;
+    padding-left: 50px;
+    background-color: #fff;
+}
+.search {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#search {
+    display: inline-block;
+}
+#buscar {
+    width: 75%;
+    margin-left: 15px;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+span {
+    margin: 0 10px 0 15px;
+}
+.usuario {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.text-bienvenida {
+    margin-left: 10px;
+}
+.text-bienvenida p {
+    margin: 0;
+    padding: 4px;
+}
+.img-perfil img {
+    width: 50px;
+    height: 50px;
+}
+img {
+    width: 35px;
+    height: 35px;
+}
+
+.derecha {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#name {
+    font-size: 24px;
+    font-weight: bold;
+}
+.user-perfil img {
+    width: 50px;
+    height: 50px;
+}
+
+.user-botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-botones button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-weight: bold;
+    background-color: rgba(14, 165, 233, 0.6);
+    color: #fff;
+}
+
+button:hover {
+    background-color: rgb(14, 165, 233);
+    cursor: pointer;
+}
+
+/**Contenido del perfil*/
+.contenido {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    box-sizing: content-box;
+    background-color: #bfdbfe;
+    padding-left: 15px;
+    margin-top: 35px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 375px);
+    box-sizing: content-box;
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+.item-projects,
+h4,
+p {
+    margin: 0;
+}
+
+.item-projects {
+    padding: 25px 0 0 25px;
+    background-color: #fff;
+    border-radius: 15px;
+    height: 200px;
+    border-left: 10px solid #fbbf24;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/** Anuncios*/
+.anuncios {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    margin-top: 35px;
+    background-color: #bfdbfe;
+}
+.anuncios h4 {
+    margin: 18px 0;
+}
+.container-anuncio {
+    background-color: #fff;
+    padding: 15px 0 15px 25px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-bottom: 20px;
+    width: 230px;
+}
+.anuncios-items h5 {
+    margin: 0;
+}
+
+.anuncios-items p {
+    margin-bottom: 20px;
+}
+.anuncios-items {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+/** Tendencia*/
+
+.trending {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    background-color: #bfdbfe;
+}
+
+.trending h3 {
+    margin-left: 20px;
+}
+
+.usuarios {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+}
+.container-trending {
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    width: 240px;
+    margin-bottom: 20px;
+}
+
+.imagen-usuario {
+    justify-self: center;
+    align-self: center;
+}
+
+.imagen-usuario img {
+    width: 40px;
+    height: 40px;
+}
